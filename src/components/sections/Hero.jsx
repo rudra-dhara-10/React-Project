@@ -1,6 +1,6 @@
 import React from "react";
 import Navber from "../layout/Navber";
-import Vector from "../../assets/Header/vector.svg";
+import Vector from "../../assets/Header/Vector.svg";
 import Vector1 from "../../assets/Header/Vector1.svg";
 import Line1 from "../../assets/Header/Line1.svg";
 import HeroImg from "../../assets/Header/Hero_Img.jpg";
