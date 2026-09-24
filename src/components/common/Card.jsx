@@ -1,8 +1,8 @@
 import React from "react";
 
-import img1 from "../../assets/PremiumBenifits/image1.jpg";
-import img2 from "../../assets/PremiumBenifits/image2.jpg";
-import img3 from "../../assets/PremiumBenifits/image3.jpg";
+import img1 from "../../assets/PremiumTvAds/image1.jpg";
+import img2 from "../../assets/PremiumTvAds/image2.jpg";
+import img3 from "../../assets/PremiumTvAds/image3.jpg";
 
 const Card = () => {
   const datas = [
