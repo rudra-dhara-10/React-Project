@@ -5,6 +5,9 @@ import PremiumTvAds from './components/sections/PremiumTvAds'
 import ComercialProcess from './components/sections/ComercialProcess'
 import PrecisionTargeting from './components/sections/PrecisionTargeting'
 import Comercials from './components/sections/Comercials'
+import About from './components/sections/About'
+import Comercial from './components/sections/Comercial'
+import Footer from './components/sections/Footer'
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
       <ComercialProcess />
       <PrecisionTargeting />
       <Comercials />
+      <About />
+      <Comercial />
+      <Footer />
     </div>
   )
 }

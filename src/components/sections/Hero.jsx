@@ -39,7 +39,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="btn flex gap-3">
-              <button className="px-8 py-2 border-none bg-green-300 rounded-full cursor-pointer capitalize">
+              <button className="px-8 py-2 border-none bg-[#A8F0B8] rounded-full cursor-pointer capitalize">
                 Get on TV
               </button>
               <button className="px-8 py-2 border-none bg-[#2A3748] text-white rounded-full cursor-pointer capitalize">
