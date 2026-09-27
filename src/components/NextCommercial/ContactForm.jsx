@@ -4,9 +4,9 @@ const ContactForm = () => {
   return (
     <div>
       <form className="p-5 flex flex-col gap-3 bg-[#4C5F76] rounded-3xl w-full">
-        <h1 className="text-3xl font-semibold text-white">Get Started with AdCactus</h1>
+        <h1 className="lg:text-3xl md:text2xl text-xl font-bold text-white">Get Started with AdCactus</h1>
         <div className="allInput w-full flex flex-col gap-3">
-          <div className="inputs flex gap-4">
+          <div className="inputs flex gap-4 flex-col lg:flex-row ">
             <div className="input flex flex-col gap-2 flex-1">
               <label className="text-white">Full Name</label>
               <input type="text" placeholder="Full name" className="bg-white text-black rounded-lg px-3 py-2 outline-none" />
@@ -16,7 +16,7 @@ const ContactForm = () => {
               <input type="text" placeholder="Phone number" className="bg-white text-black rounded-lg px-3 py-2 outline-none" />
             </div>
           </div>
-          <div className="inputs flex gap-4">
+          <div className="inputs flex gap-4 flex-col lg:flex-row">
             <div className="input flex flex-col gap-2 flex-1">
               <label className="text-white">Email Address</label>
               <input type="text" placeholder="Email address" className="bg-white text-black rounded-lg px-3 py-2 outline-none" />
@@ -26,7 +26,7 @@ const ContactForm = () => {
               <input type="text" placeholder="Company name" className="bg-white text-black rounded-lg px-3 py-2 outline-none" />
             </div>
           </div>
-          <div className="inputs flex gap-4">
+          <div className="inputs flex gap-4 flex-col lg:flex-row">
             <div className="input flex flex-col gap-2 flex-1">
               <label className="text-white">Company Website</label>
               <input type="text" placeholder="Company website url" className="bg-white text-black rounded-lg px-3 py-2 outline-none" />

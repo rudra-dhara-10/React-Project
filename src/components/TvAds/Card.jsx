@@ -4,6 +4,7 @@ import img1 from "../../assets/PremiumTvAds/image1.jpg";
 import img2 from "../../assets/PremiumTvAds/image2.jpg";
 import img3 from "../../assets/PremiumTvAds/image3.jpg";
 
+
 const Card = () => {
   const datas = [
     {
@@ -24,27 +25,27 @@ const Card = () => {
   ];
 
   return (
-    <div className="flex justify-center gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 justify-items-center">
       {datas.map((data, index) => (
         <div
           key={index}
-          className="w-100 p-6 bg-white rounded-2xl flex flex-col items-center justify-center"
+          className="w-full max-w-sm p-5 bg-white rounded-2xl flex flex-col gap-2 lg:gap-3 lg:items-center lg:justify-center"
         >
           <img
-            className="w-full h-55 object-cover rounded-xl"
+            className="w-full lg:h-55 object-cover rounded-xl"
             src={data.img}
             alt={data.heading}
           />
 
-          <h1 className="text-xl text-black font-semibold mt-5">
+          <h1 className="lg:text-xl lg:px-5 text-left lg:text-center text-black font-semibold">
             {data.heading}
           </h1>
 
-          <p className="text-zinc-500 mt-3">
+          <p className="text-zinc-500 lg:px-8 lg:text-sm text-left lg:text-center">
             {data.pera}
           </p>
 
-          <button className="mt-5 px-6 py-2 border-none bg-green-300 rounded-full cursor-pointer text-black">
+          <button className="lg:mt-5 lg:px-4 lg:py-2 w-25 px-2 py-1 text-sm border-none bg-green-300 rounded-full cursor-pointer text-black">
             Get on TV
           </button>
         </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Navber from "../layout/Navber";
 import Vector from "../../assets/Header/Vector.svg";
 import Vector1 from "../../assets/Header/Vector1.svg";
 import Line1 from "../../assets/Header/Line1.svg";
@@ -15,34 +14,33 @@ import Line from "../../assets/Header/Line9.png";
 const Hero = () => {
   return (
     <>
-      <Navber />
-      <div className="w-full px-36">
-        <div className="header flex mt-10 w-full">
-          <div className="left-text flex flex-col gap-4 w-[604px] h-[532px]">
-            <div className="vector-text flex border rounded-full px-3 py-1 w-96">
-              <img className="w-4" src={Vector} alt="" />
-              <p className="text-[12px]">
+      <div className="w-full lg:px-36 px-6 md:px-12">
+        <div className=" lg:flex flex-row gap-5 mt-10 w-full ">
+          <div className="left-text flex flex-col gap-4 w-3/5 lg:h-110">
+            <div className="vector-text flex gap-1 border rounded-full w-65 px-2 lg:px-3 py-1 lg:w-85">
+              <img className="lg:w-4 w-2" src={Vector} alt="" />
+              <p className="lg:text-[12px] text-[9px]">
                 Now in private beta · Backed by leading health investors
               </p>
             </div>
             <div className="heading">
-              <h1 className="text-5xl capitalize font-bold">
-                A smarter way <br /> to make your <br /> next commercial.
+              <h1 className="lg:text-5xl text-2xl md:4xl capitalize font-bold">
+                A smarter way <br className="hidden lg:block" /> to make your <br className="hidden lg:block" /> next <br className="block lg:hidden" /> commercial.
               </h1>
             </div>
             <div className="about">
               <p>
-                Turn your business website or existing video into a professional{" "}
-                <br />
-                commercial with AI — ready to review, download, and take <br />{" "}
+                Turn your business website or existing video into a professional
+                <br className="hidden lg:block" />
+                commercial with AI — ready to review, download, and take <br className="hidden lg:block" /> 
                 toward streaming TV.
               </p>
             </div>
             <div className="btn flex gap-3">
-              <button className="px-8 py-2 border-none bg-[#A8F0B8] rounded-full cursor-pointer capitalize">
+              <button className="lg:px-8 lg:py-2 lg:text-base text-sm px-2 py-1 border-none bg-[#A8F0B8] rounded-full cursor-pointer capitalize">
                 Get on TV
               </button>
-              <button className="px-8 py-2 border-none bg-[#2A3748] text-white rounded-full cursor-pointer capitalize">
+              <button className="lg:px-8 lg:py-2 lg:text-base text-sm px-2 py-1 border-none bg-[#2A3748] text-white rounded-full cursor-pointer capitalize">
                 Contact us
               </button>
             </div>
@@ -62,22 +60,22 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="right-img flex items-center justify-center ">
-            <img className="h-90% w-full object-cover" src={HeroImg} alt="" />
+          <div className="right-img py-2 lg:flex items-center justify-center w-full ">
+            <img className="lg:w-full  lg:h-100 lg:object-cover w-full" src={HeroImg} alt="" />
           </div>
         </div>
-        <div className="h-[125px] flex justify-evenly items-center mb-10 border-t border-b border-zinc-300">
-          <img className="w-20" src={Image1} alt="" />
+        <div className="h-25 mt-5 flex justify-evenly items-center mb-10 border-t border-b border-zinc-300">
+          <img className="lg:w-20 w-10" src={Image1} alt="" />
           <img src={Line} alt="" />
-          <img className="w-20 h-20" src={Image2} alt="" />
+          <img className="lg:w-20 w-10 lg:h-20" src={Image2} alt="" />
           <img src={Line} alt="" />
-          <img className="w-20 h-20" src={Image3} alt="" />
+          <img className="lg:w-20 w-10 lg:h-20" src={Image3} alt="" />
           <img src={Line} alt="" />
-          <img className="w-20 h-20" src={Image4} alt="" />
+          <img className="lg:w-20 w-10 lg:h-20" src={Image4} alt="" />
           <img src={Line} alt="" />
-          <img className="w-20 h-20" src={Image5} alt="" />
+          <img className="lg:w-20 w-10 lg:h-20" src={Image5} alt="" />
           <img src={Line} alt="" />
-          <img className="w-20 h-20" src={Image6} alt="" />
+          <img className="lg:w-20 w-10 lg:h-20" src={Image6} alt="" />
         </div>
       </div>
     </>

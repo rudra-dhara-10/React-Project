@@ -39,20 +39,20 @@ const PremiumBenefits = () => {
   ];
 
   return (
-    <div className="px-36 mt-20 w-full mb-5">
-      <div className="heading flex justify-between items-center">
-        <h1 className="text-5xl flex-1 font-semibold">Unlock Premium Benefits <br /> With Our Advanced Features</h1>
-        <h3 className="w-[40%] ml-auto pl-35">
-          Give us your website and let AI understand your <br /> business. AdCactus
-          analyzes your content, <br /> brand, products, and visual assets.
+    <div className="lg:px-36 md:px-12 px-6 py-15 w-full mb-5">
+      <div className="heading flex gap-2 flex-col lg:flex-row lg:justify-between lg:items-center">
+        <h1 className="lg:text-5xl lg:flex-1 text-3xl font-bold">Unlock Premium Benefits <br className="hidden lg:block" /> With Our Advanced Features</h1>
+        <h3 className="lg:w-[40%] lg:ml-auto lg:pl-35 ">
+          Give us your website and let AI understand your <br className="hidden lg:block" /> business. AdCactus
+          analyzes your content, <br className="hidden lg:block" /> brand, products, and visual assets.
         </h3>
       </div>
-      <div className="other flex mt-10 gap-5">
-        <div className="left w-[45%]">
+      <div className="other flex flex-col lg:flex-row py-10 gap-5">
+        <div className="left lg:w-[45%] ">
           {premiumBenefitsData.map((item) => (
-            <div id={item.id} className="card px-4 py-2 flex flex-col gap-1">
-              <div className="heading flex gap-2 ">
-                <img className="w-4" src={item.icon} alt="" />
+            <div id={item.id} className="card  px-4 py-2 flex flex-col gap-1">
+              <div className="heading  flex gap-2 ">
+                <img className="w-7 border p-2 rounded-md" src={item.icon} alt="" />
                 <h2>{item.title}</h2>
               </div>
               <p>{item.description}</p>
@@ -62,8 +62,8 @@ const PremiumBenefits = () => {
         </div>
         <div className="right p-5 bg-white shadow-lg rounded-2xl">
           <img className="rounded-2xl h-60 w-full " src={Right} alt="" />
-          <h1 className="mt-3 text-2xl font-semibold">Lower Your Cost Per Lead With Smarter TV Advertising</h1>
-          <p className="text-sm">Reach people who have already shown interest in your business, reduce wasted ad spend, and <br /> put your budget toward audiences most likely to convert.</p>
+          <h1 className="mt-3 lg:text-2xl text-xl font-semibold">Lower Your Cost Per Lead With Smarter TV Advertising</h1>
+          <p className="text-sm ">Reach people who have already shown interest in your business, reduce wasted ad spend, and <br className="hidden lg:block" /> put your budget toward audiences most likely to convert.</p>
         </div>
       </div>
     </div>

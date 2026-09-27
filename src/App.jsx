@@ -1,28 +1,30 @@
-import React from 'react'
-import Hero from './components/sections/Hero'
-import PremiumBenefits from './components/sections/PremiumBenefits'
-import PremiumTvAds from './components/sections/PremiumTvAds'
-import ComercialProcess from './components/sections/ComercialProcess'
-import PrecisionTargeting from './components/sections/PrecisionTargeting'
-import Comercials from './components/sections/Comercials'
-import About from './components/sections/About'
-import Comercial from './components/sections/Comercial'
-import Footer from './components/sections/Footer'
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import PremiumTvAds from "./components/TvAds/PremiumTvAds";
+import PremiumBenefits from "./components/Benefits/PremiumBenefits";
+import ComercialProcess from "./components/Comercial/ComercialProcess";
+import PrecisionTargeting from "./components/PrecisionTargeting/PrecisionTargeting";
+import Commercials from "./components/Commercials/Commercials";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
+import Comercial from "./components/NextCommercial/Comercial";
 
-const App = () => {
+const Appp = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <PremiumTvAds />
       <PremiumBenefits />
       <ComercialProcess />
       <PrecisionTargeting />
-      <Comercials />
+      <Commercials />
       <About />
       <Comercial />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default Appp;
